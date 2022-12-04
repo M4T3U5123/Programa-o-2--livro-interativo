@@ -1,0 +1,89 @@
+import java.util.Scanner;
+public class app { 
+public static void main(String[]args) {
+   Scanner escaneador = new Scanner(System.in);
+
+   String part1 = 
+   "Um nobre cavaleiro chega na caverna escura. " +
+   "Ao chegar na caverna ele entra e da de cara com um feroz Dragão.  " +
+   "Que já estava com os pulmões cheios de chamas para cuspir no cavaleiro. " +
+   "Oque o Cavaleiro faz: ";
+   
+
+   String part1Primeiraescolha = 
+   "Utiliza seu escudo como proteção.";
+   
+   String part1Segundaescolha = 
+   "sair correndo para fora da caverna.";
+
+   String part1Teceiraescolha = 
+   "saca sua espada e sai correndo em direção ao dragão.";
+
+   String part2 =  
+   "Usando seu escudo o cavaleivo se proge das chamas do dragão. " +
+   "Porém ao ver que o cavaleiro não foi encinerado o dragão parte com tudo em ciama do cavaleiro. " +
+   "E agora oque o cavaleiro deve fazer: ";
+
+   String part2Primeiraescolha =
+   "largar o escudo e correndo com a espada na mão  se chocando com o dragão.";
+
+   String part2Segundaescolha =
+   "Pegar sua lança apontar em direção ao dragão e se esconder atrás do escudo";
+
+   String part3 = 
+   "Na correria o cavaleiro consegue fugir das chamas do dragão e sair da cavarna para nunca mais voltar. Fim!";
+
+   String part4 = 
+   " Ao corre com sua espada em direção ao dragão que estava prestes a cuspir fogo, o cavaleiro é incinerado pelas chamas do dragão e morre. Fim.";
+
+   String part5 = 
+   "Ao se chocar com o dragão sua espada quebra e o cavaleiro é devorado vivo pela fera" +
+   "Fim!";
+
+   String part6 =
+   "o Dragão se choca com a lança do cavaleiro e ela perfura seu coração. " +
+   "Como o cavaleiro estava escondido atrás de seu escudo, ele não tomou nenhum dano. " +
+   "O Dragão morre e o cavaleiro se torna um Herói lendario. Fim!. ";
+   
+
+ { System.out.println(part1);
+   System.out.println("- " + part1Primeiraescolha);
+   System.out.println("- " +  part1Segundaescolha);
+   System.out.println("- " + part1Teceiraescolha);
+
+   System.out.println("\nDigite: ");
+   String escolha = escaneador.nextLine();
+   System.out.println();
+
+   if(escolha.equalsIgnoreCase(part1Primeiraescolha)) {
+       System.out.println(part2);
+       System.out.println("- " + part2Primeiraescolha);
+       System.out.print("- " + part2Segundaescolha);
+
+       System.out.println("\nDigite: ");
+       escolha = escaneador.nextLine();
+       System.out.println();
+
+       if(escolha.equalsIgnoreCase(part2Primeiraescolha)) {
+           System.out.println(part5);
+       }
+       else if(escolha.equalsIgnoreCase(part2Segundaescolha)) {
+           System.err.println(part6);
+       }
+       else {
+           System.out.println("escolha inválida!");
+       }
+   }
+   else if(escolha.equalsIgnoreCase( part1Segundaescolha)) {
+       System.out.println(part3);
+   }
+   else if(escolha.equalsIgnoreCase(part1Teceiraescolha)) {
+       System.out.println(part4);
+   }
+   else {
+       System.out.println("escolha inválida!");
+   }
+   escaneador.close();
+}
+}
+}
