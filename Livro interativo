@@ -11,27 +11,27 @@ public static void main(String[]args) {
    
 
    String part1Primeiraescolha = 
-   "Utiliza seu escudo como proteção.";
+   "utilizar seu escudo como protecao.";
    
    String part1Segundaescolha = 
    "sair correndo para fora da caverna.";
 
    String part1Teceiraescolha = 
-   "saca sua espada e sai correndo em direção ao dragão.";
+   "saca sua espada e sai correndo em direcao ao dragao.";
 
    String part2 =  
    "Usando seu escudo o cavaleivo se proge das chamas do dragão. " +
-   "Porém ao ver que o cavaleiro não foi encinerado o dragão parte com tudo em ciama do cavaleiro. " +
+   "Porém ao ver que o cavaleiro não foi encinerado o dragão parte com tudo em cima do cavaleiro. " +
    "E agora oque o cavaleiro deve fazer: ";
 
    String part2Primeiraescolha =
-   "largar o escudo e correndo com a espada na mão  se chocando com o dragão.";
+   "largar o escudo e sair correndo com a espada na mao se chocando com o dragao.";
 
    String part2Segundaescolha =
-   "Pegar sua lança apontar em direção ao dragão e se esconder atrás do escudo";
+   "Pegar sua lanca apontar em direcao ao dragao e se esconder atras do escudo.";
 
    String part3 = 
-   "Na correria o cavaleiro consegue fugir das chamas do dragão e sair da cavarna para nunca mais voltar. Fim!";
+   "Na correria o cavaleiro consegue fugir das chamas do dragão e sair da caverna para nunca mais voltar. Fim!";
 
    String part4 = 
    " Ao corre com sua espada em direção ao dragão que estava prestes a cuspir fogo, o cavaleiro é incinerado pelas chamas do dragão e morre. Fim.";
